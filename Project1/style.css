@@ -10,3 +10,20 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
+h1 {
+    font-size: 2rem;
+    color: black;
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: blue;
+}
+
+p {
+    
+}
