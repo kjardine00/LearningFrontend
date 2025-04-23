@@ -1,4 +1,4 @@
-# Hello This is project 1 of learning to Frontend the best.
+# Project 1 of learning to Frontend.
 
 https://roadmap.sh/projects/single-page-cv
 
