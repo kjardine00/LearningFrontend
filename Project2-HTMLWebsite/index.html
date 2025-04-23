@@ -17,7 +17,7 @@
     <title>Kyle's Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header-container">
         <div class="header-left">
             <img src="assets/android-chrome-512x512.png" alt="Logo" class="logo">
             <h1> Hi I'm Kyle o/</h1>
@@ -40,38 +40,38 @@
         <h3>subtitle</h3>
     </div>
 
-    <section class="flex-container" style="text-align: center; margin-top: 20px;"> <!-- Projects, Work Experience, Education-->
-        <article style="flex: 1;">
-            <h2>Projects</h2>
+    <section class="body-container"> <!-- Projects, Work Experience, Education-->
+        <article class="body-container-projects">
+            <h2 style="padding: 2rem;">Projects</h2>
             <ul>
-                <li><a href="">Project 1</a></li>
-                <li><a href="">Project 2</a></li>
-                <li><a href="">Project 3</a></li>
+                <li class="project-item"><a href="">HTML only Portfolio</a></li>
+                <li class="project-item"><a href="">Calculator</a></li>
+                <li class="project-item"><a href="">Quiz App</a></li>
+                <li class="project-item"><a href="">Countdown Timer</a></li>
+                <li class="project-item"><a href="">Product Upcoming Page</a></li>
             </ul>
         </article>
 
-        <article style="flex: 2;">
-            <h2>Work Experience</h2>
-            <div>
-                <h3>Job Title</h3>
+        <article class="body-container-work-experience">
+            <h2 style="padding: 2rem;">Work Experience</h2>
+            <div class="work-experience-item">
+                <h3>roadmap.sh</h3>
                 <p>
-                    Job Description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quisquam, quos.
+                    Solved all the frontend projects
                 </p>
-                <a href="">Read More</a>
+                <a style="color: #2963cf; font-size: 0.8rem;" href="">Visit my profile</a>
             </div>
-            <div>
-                <h3>Job Title 2</h3>
+            <div class="work-experience-item">
+                <h3>OpenSource Work</h3>
                 <p>
-                    Job Description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quisquam, quos.
+                    Contributed to XX opensource projects. Made my own projects with XXX GitHub Stars
                 </p>
-                <a href="">Read More</a>
+                <a style="color: #2963cf; font-size: 0.8rem;" href="">Visit my Github Profile</a>
             </div>
         </article>
 
-        <article style="flex: 2;">
-            <h2>Education</h2>
+        <article class="body-container-education">
+            <h2 style="padding: 2rem;">Education</h2>
             <p> Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
                 Quisquam, quos.
             </p>

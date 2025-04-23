@@ -8,16 +8,26 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h1,h2,h3 {
+    font-family: "Covered By Your Grace", cursive;
+    letter-spacing: 0.05em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .logo {
     width: 50px;
     height: 50px;
 }
 
-header {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    gap: 1rem;
 }
 
 .header-left {
@@ -27,8 +37,7 @@ header {
 }
 
 nav {
-    display: flex;
-    align-items: center;
+    align-self: center;
 }
 
 nav ul {
@@ -36,11 +45,6 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 1rem;
-    align-items: center;
-}
-
-nav ul li {
-    display: flex;
     align-items: center;
 }
 
@@ -59,26 +63,53 @@ nav ul li a {
     width: 100%;
     padding: 3rem 2rem;
     text-align: center;
-    margin-top: 1rem;
-}
-
-h1,h2,h3 {
-    font-family: "Covered By Your Grace", cursive;
-    letter-spacing: 0.05em;
-}
-
-section {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 1rem 0;
 }
 
 article {
+    border: 2px solid black;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.body-container-projects {
+    border: 2px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-item {
+    list-style-type: none;
     padding: 1rem;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.body-container-work-experience {
+    /* border: 2px solid black; */
+    flex: 2;
+}
+
+.work-experience-item {
+    list-style-type: none;
+    padding: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.work-experience-item:last-child {
+    border-bottom: none;
+}
+
+.body-container-education {
+    /* border: 2px solid black;     */
+    flex: 2;
 }
