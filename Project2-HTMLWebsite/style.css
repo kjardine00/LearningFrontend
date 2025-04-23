@@ -1,9 +1,11 @@
 * {
-
-} 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-
+    font-family: Arial, sans-serif;
 }
 
 .logo {
@@ -15,11 +17,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 nav {
     display: flex;
-    align-items: right;
+    align-items: center;
 }
 
 nav ul {
@@ -27,8 +36,30 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-separator {
+    color: inherit;
+    font-size: 1.5rem;
+}
+.hero-section {
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
 
 h1,h2,h3 {
     font-family: "Covered By Your Grace", cursive;
