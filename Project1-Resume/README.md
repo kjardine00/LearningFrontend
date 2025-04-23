@@ -10,9 +10,9 @@ Open Graph (OG) Tags: Add OG tags for better social media sharing.
 Favicon: Add a favicon for your CV page.
 The structure of your CV should be easily understandable and ready for styling in a future project.
 
-Submission Checklist:
-[x] Semantically correct HTML structure.
-[x] Single-page layout with sections for education, skills, and career history.
-[x] SEO meta tags in the head section.
-[x] OG tags for better social media sharing.
-[x] A favicon linked in the head section.
+## Submission Checklist:
+- [x] Semantically correct HTML structure
+- [x] Single-page layout with sections for education, skills, and career history
+- [x] SEO meta tags in the head section
+- [x] OG tags for better social media sharing
+- [x] A favicon linked in the head section
