@@ -1,0 +1,36 @@
+* {
+
+} 
+
+body {
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+
+h1,h2,h3 {
+    font-family: "Covered By Your Grace", cursive;
+    letter-spacing: 0.05em;
+}
