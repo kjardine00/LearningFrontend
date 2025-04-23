@@ -1,6 +1,6 @@
 # Project 1 of learning to Frontend.
 
-https://roadmap.sh/projects/single-page-cv
+[View the project roadmap](https://roadmap.sh/projects/single-page-cv)
 
 # Key requirements for this project:
 
