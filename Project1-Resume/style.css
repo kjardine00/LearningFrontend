@@ -5,10 +5,19 @@
 }
 
 body {
+    max-width: 55vw;
+    min-width: 500px;
+    margin: 0 auto;
+    border: 3px solid black;
+    padding: 2rem;
+    margin-top: 15px;
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+}
+
+hr {
+    width: 80%;
+    margin-left: 0;
+    border: 2px solid black;
 }
 
 h1 {
@@ -17,13 +26,43 @@ h1 {
 }
 
 h2 {
-    color: green;
+    font-size: 1.2rem;
+    color: #309041;
+    margin: 10px 0;
 }
 
 h3 {
-    color: blue;
+    font-size: 1.1rem;
+    color: #1B72C2;
+    margin: 5px 0;
+    padding: 0;
 }
 
 p {
+    margin: 5px 0;
+}
+
+h2,h3,a,p {
+    text-align: justify;
+}
+
+section {
+    display: block;
+    font-style: normal;
+    margin: 10px 0;
+}
+
+.experience-item {
+    margin: 15px 0;
     
 }
+
+.experience-item ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.experience-item li {
+    margin: 5px 0;
+}
+
