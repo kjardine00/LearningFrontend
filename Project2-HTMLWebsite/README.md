@@ -23,7 +23,7 @@ You are not required to style the website, you are only required to create the s
 You can use the following mockup example to create the structure of the website (remember, you are not required to style the website, only focus on the structure that you can style later):
 
 ## Submission Checklist:
-- [ ] Semantically correct HTML structure
+- [x] Semantically correct HTML structure
 - [ ] Multiple pages with a navigation bar
 - [ ] SEO meta tags in the head of each page
 - [ ] Contact page should have a form with fields like name, email, message etc

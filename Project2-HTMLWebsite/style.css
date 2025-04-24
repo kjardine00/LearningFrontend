@@ -17,6 +17,10 @@ h2 {
     padding: 1rem 2rem;
 }
 
+h3 {
+    padding: .5rem 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -26,7 +30,7 @@ a {
     height: 50px;
 }
 
-.header-container {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
