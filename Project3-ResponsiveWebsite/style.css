@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,h2,h3 {
+    font-family: "Covered By Your Grace", cursive;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    padding: 1rem 2rem;
+}
+
+h3 {
+    padding: .5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav {
+    align-self: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-separator {
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+.hero-section {
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+article {
+    border: 2px solid black;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.body-container-projects {
+    border: 2px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-item {
+    list-style-type: none;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.body-container-work-experience {
+    /* border: 2px solid black; */
+    flex: 2;
+}
+
+.work-experience-item {
+    list-style-type: none;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid black;
+}
+
+.work-experience-item:last-child {
+    border-bottom: none;
+}
+
+.body-container-education {
+    /* border: 2px solid black;     */
+    flex: 2;
+} 
+
+h4 {
+    font-weight: normal;
+    padding: 1rem 0;
+}
+
+.education-item {
+    list-style-type: "- ";
+}
+
+.edu-description {
+    padding: 1rem 2rem;
+}
+
+.reviews-container {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.review-item {
+    padding: 1rem 2rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.review-desc {
+    font-size: 1rem;
+    padding: .9rem 0;
+}
+
+.review-name {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
