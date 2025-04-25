@@ -1,6 +1,6 @@
 # Project 2 of learning to Frontend.
 
-[View the project instructions on roadmap.sh](https://roadmap.sh/projects/single-page-cv)
+[View the project instructions on roadmap.sh](https://roadmap.sh/projects/basic-html-website)
 
 # Key requirements for this project:
 
