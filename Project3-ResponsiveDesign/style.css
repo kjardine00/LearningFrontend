@@ -56,6 +56,11 @@ nav ul {
     align-items: center;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .nav-separator {
     color: inherit;
     font-size: 1.5rem;
@@ -84,12 +89,7 @@ article {
     flex: 1;
     display: flex;
     flex-direction: column;
-}
-
-.body-container-projects ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    gap: 1rem;
 }
 
 .project-item {
@@ -103,6 +103,7 @@ article {
 }
 
 .body-container-work-experience {
+    /* border: 2px solid black; */
     flex: 2;
 }
 
@@ -117,8 +118,9 @@ article {
 }
 
 .body-container-education {
+    /* border: 2px solid black;     */
     flex: 2;
-}
+} 
 
 h4 {
     font-weight: normal;
@@ -213,73 +215,3 @@ footer {
 .submit-btn:hover {
     background-color: #333;
 }
-
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-    }
-
-    h2 {
-        padding: 0;
-        padding: 1rem;
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        padding: 0;
-        font-size: 1rem;
-    }
-
-    .hero-section {
-        padding: 0;
-    }    
-
-    .body-container {
-        flex-direction: column;
-        
-    }
-    
-    .body-container h2 {
-        text-align: center;
-        padding: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .body-container-projects li {
-        text-align: center;
-        background-color: #d1d1d1;
-        border: 1px solid black;
-    }
-
-    .project-item {
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .body-container-work-experience {
-        padding: 0;
-    }
-    
-    .work-experience-item {
-        text-align: left;
-        background-color: #d1d1d1;
-        border: 1px solid black;
-    }
-
-    .body-container-education {
-        padding: 0;
-    }
-
-    .reviews-container {
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-
-    .review-item:nth-child(2),
-    .review-item:nth-child(3) {
-        display: none;
-    }
-
-}
-
-

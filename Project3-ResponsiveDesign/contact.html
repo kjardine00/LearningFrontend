@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyle's portfolio website showcasing frontend development projects and experience">
+    <meta name="keywords" content="frontend developer, web development, portfolio, HTML, CSS, JavaScript">
+    <meta name="author" content="Kyle">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Kyle's Portfolio - Frontend Developer">
+    <meta property="og:description" content="Portfolio website showcasing frontend development projects and experience">
+    <meta property="og:type" content="website">
+
+    <!-- https://favicon.io/favicon-generator/ -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kyle's Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="assets/android-chrome-512x512.png" alt="Logo" class="logo">
+            <h1> Hi I'm Kyle o/</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-separator">/</li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="nav-separator">/</li>
+                <li><a href="articles.html">Articles</a></li>
+                <li class="nav-separator">/</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <h2>Contact Me</h2>
+        <h3>Please fill out the form below to get in touch with me.</h3>
+    </div>
+
+    <div class="contact-form-container">
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
