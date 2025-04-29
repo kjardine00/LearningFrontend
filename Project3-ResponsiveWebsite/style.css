@@ -56,11 +56,6 @@ nav ul {
     align-items: center;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .nav-separator {
     color: inherit;
     font-size: 1.5rem;
@@ -103,7 +98,6 @@ article {
 }
 
 .body-container-work-experience {
-    /* border: 2px solid black; */
     flex: 2;
 }
 
@@ -118,9 +112,8 @@ article {
 }
 
 .body-container-education {
-    /* border: 2px solid black;     */
     flex: 2;
-} 
+}
 
 h4 {
     font-weight: normal;
@@ -215,3 +208,4 @@ footer {
 .submit-btn:hover {
     background-color: #333;
 }
+
