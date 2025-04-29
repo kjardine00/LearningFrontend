@@ -3,5 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tab with JavaScript</title>
+</head>
+<body>
+    <h1>Tabs with JavaScript</h1>
+    <div class="tab-component">
+        <div class="tabs">
+            <button class="tab-button" onClick="makeTabActive(event, 'first-tab')">First Tab</button>
+            <button class="tab-button" onClick="makeTabActive(event, 'second-tab')">Second Tab</button>
+            <button class="tab-button" onClick="makeTabActive(event, 'third-tab')">Third Tab</button>
+            <button class="tab-button" onClick="makeTabActive(event, 'fourth-tab')">Fourth Tab</button>
+        </div>
+        <h2 class="tab-description">Clicking each tab should hide the content of the other tab and show the content of the clicked tab. By default, enable the first tab.</span>
+        <div class="tab-content">
+            <div class="tab-content-item" id="first-tab" >
+                <h3>This is the content for the first tab</h3>
+                <img src="https://placehold.co/150/FFB3BA/000000?text=First+Tab" alt="First Tab">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="tab-content-item" id="second-tab" style="display: none;">
+                <h3>This is the content for the second tab</h3>
+                <img src="https://placehold.co/150/BAE1FF/000000?text=Second+Tab" alt="Second Tab">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="tab-content-item" id="third-tab" style="display: none;">
+                <h3>This is the content for the third tab</h3>
+                <img src="https://placehold.co/150/BAFFC9/000000?text=Third+Tab" alt="Third Tab">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div> 
+            <div class="tab-content-item" id="fourth-tab" style="display: none;">
+                <h3>This is the content for the fourth tab</h3>
+                <img src="https://placehold.co/150/FFFFBA/000000?text=Fourth+Tab" alt="Fourth Tab">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
