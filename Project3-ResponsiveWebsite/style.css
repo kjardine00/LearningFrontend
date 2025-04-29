@@ -1,3 +1,22 @@
+:root {
+    /* Light theme (default) */
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #000000;
+    --card-background: #ffffff;
+    --project-item-bg: #d1d1d1;
+    --review-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --border-color: #ffffff;
+    --card-background: #2d2d2d;
+    --project-item-bg: #3d3d3d;
+    --review-bg: #2d2d2d;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +25,9 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,h2,h3 {
@@ -70,7 +92,7 @@ nav ul {
 }
 
 article {
-    border: 2px solid black;
+    border: 2px solid var(--border-color);
 }
 
 .body-container {
@@ -95,7 +117,8 @@ article {
 .project-item {
     list-style-type: none;
     padding: 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--project-item-bg);
 }
 
 .project-item:last-child {
@@ -109,7 +132,8 @@ article {
 .work-experience-item {
     list-style-type: none;
     padding: 1rem 2rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--card-background);
 }
 
 .work-experience-item:last-child {
@@ -143,8 +167,9 @@ h4 {
 
 .review-item {
     padding: 1rem 2rem;
-    border: 2px solid black;
+    border: 2px solid var(--border-color);
     border-radius: 1rem;
+    background-color: var(--review-bg);
 }
 
 .review-desc {
@@ -154,7 +179,8 @@ h4 {
 
 .review-name {
     font-size: 1rem;
-    color: #666;
+    color: var(--text-color);
+    opacity: 0.7;
 }
 
 footer {
@@ -189,9 +215,11 @@ footer {
 .form-group input,
 .form-group textarea {
     padding: 0.8rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 0.5rem;
     font-size: 1rem;
+    background-color: var(--card-background);
+    color: var(--text-color);
 }
 
 .form-group textarea {
@@ -200,23 +228,39 @@ footer {
 }
 
 .submit-btn {
-    background-color: #000;
-    color: white;
+    background-color: var(--text-color);
+    color: var(--background-color);
     padding: 1rem 2rem;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .submit-btn:hover {
-    background-color: #333;
+    opacity: 0.8;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    color: var(--text-color);
+}
+
+#theme-toggle:hover {
+    background-color: var(--card-background);
 }
 
 @media (max-width: 480px) {
     header {
         flex-direction: column;
+        padding: 1rem;
     }
 
     h2 {
@@ -279,7 +323,4 @@ footer {
     .review-item:nth-child(3) {
         display: none;
     }
-
 }
-
-

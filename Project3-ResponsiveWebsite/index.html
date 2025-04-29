@@ -29,6 +29,7 @@
             <img src="assets/android-chrome-512x512.png" alt="Logo" class="logo">
             <h1> Hi I'm Kyle o/</h1>
         </div>
+        <button id="theme-toggle" aria-label="Toggle dark mode">☾</button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -119,5 +120,25 @@
     <footer>
         <p>&copy; 2025 Kyle's Website, All rights reserved</p>
     </footer>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            themeToggle.textContent = savedTheme === 'dark' ? '☼' : '☾';
+        }
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☼' : '☾';
+        });
+    </script>
 </body>
 </html>
