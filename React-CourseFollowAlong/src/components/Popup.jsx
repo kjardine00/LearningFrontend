@@ -1,24 +1,16 @@
-function Popup({ prompt }) {
-  function handleConfirm() {
-    console.log("confirm clicked");
-  }
-  function handleCancel() {
-    console.log("cancel clicked");
-  }
+function Popup({ prompt, closePopup }) {
   return (
     <>
       <div className="popup">
         <span>{prompt}</span>
         <div className="popup_btns">
-          <button className="popup_btn" onClick={handleConfirm}>
-            Confirm
-          </button>
-          <button className="popup_btn--cancel" onClick={handleCancel}>
+          <button className="popup_btn">Confirm</button>
+          <button className="popup_btn--cancel" onClick={closePopup}>
             Cancel
           </button>
         </div>
       </div>
-      <div className="backdrop"></div>
+      <div className="backdrop" onClick={closePopup}></div>
     </>
   );
 }

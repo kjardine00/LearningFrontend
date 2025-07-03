@@ -3,15 +3,23 @@ import TodoTitle from "./components/TodoTitle.jsx";
 import Todo from "./components/Todo.jsx";
 import Popup from "./components/Popup.jsx";
 import Counter from "./components/Counter.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [popupOpen, setPopupOpen] = useState(false);
 
-  return <Counter />;
+  function togglePopup() {
+    console.log("parent delete notified");
+    setPopupOpen((prevPopupOpen) => !prevPopupOpen);
+  }
 
-  const [task, setTask] = useState("")
+  function closePopup() {
+    setPopupOpen(false);
+  }
 
-  const [popupOpen, setPopupOpen] = useState(false)
+  useEffect(() => {
+    console.log("component mounted");
+  }, []);
 
   return (
     <>
@@ -26,11 +34,32 @@ function App() {
         />
         <button onClick={() => setPopupOpen(true)}>Add Task</button>
       </div>
-      <Todo task="Learn React" desc="Follow the tutorial on youtube" />
-      <Todo task="Learn Next.js" desc="Follow the tutorial on youtube" />
-      <Todo task="Get the Job" desc="apply to jobs everyday" />
-      <Todo task="Make money" desc="relax and enjoy life" />
-      {popupOpen ? <Popup prompt="Are you really really sure????" /> : null}
+      <Todo
+        togglePopup={togglePopup}
+        task="Learn React"
+        desc="Follow the tutorial on youtube"
+      />
+      <Todo
+        togglePopup={togglePopup}
+        task="Learn Next.js"
+        desc="Follow the tutorial on youtube"
+      />
+      <Todo
+        togglePopup={togglePopup}
+        task="Get the Job"
+        desc="apply to jobs everyday"
+      />
+      <Todo
+        togglePopup={togglePopup}
+        task="Make money"
+        desc="relax and enjoy life"
+      />
+      {popupOpen ? (
+        <Popup
+          closePopup={closePopup}
+          prompt="Are you really really sure????"
+        />
+      ) : null}
     </>
   );
 }
